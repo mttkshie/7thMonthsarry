@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(rgb(117, 117, 117), rgb(45, 56, 67));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Start content from the top */
+  align-items: center;
+  width: 100%; /* Ensure container takes full width */
+}
+
+.header_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; /* Space between GIF and buttons */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between buttons */
+}
+
+.btn {
+  background-color: #017cff;
+  color: white;
+  font-weight: 600;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #017cff;
+}
+
+#noButton {
+  transition: 0.5s;
+}
+
+p {
+  color: white;
+  margin-left: 50%;
+}
+
+p a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.25;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>7th Monthsarry</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text" style="color: bisque;">Happy 7th Monthsarry Bebe! <3</h1>
+      </div>
+      
+      
+      <div class="gif_container">
+        <img src="img/bubu-yier.gif" alt="Bubu Yier Sticker" />
+      </div>
+      
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()" style="background-color: rgb(255, 47, 245); color: rgb(255, 255, 255);">Love</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        style="background-color: rgb(255, 255, 255);color: rgb(252, 124, 124);">
+          Hate
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "Polaroid-Memories.html";
+          }
+
+          function moveButton() {
+          var noButton = document.getElementById("noButton");
+          var x = Math.random() * (window.innerWidth - noButton.offsetWidth);
+          var y = Math.random() * (window.innerHeight - noButton.offsetHeight);
+          noButton.style.position = "absolute";  // Keep the button's position absolute so it can move freely
+          noButton.style.left = `${x}px`;
+          noButton.style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
